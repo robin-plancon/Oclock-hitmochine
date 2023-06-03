@@ -45,8 +45,10 @@ rlInterface.on("line", userInput => {
                 console.log(`${index+1}. ${song}\n`);
             });
             break;
+        // If user enter something, we print an error message.
         default:
             console.error(`${userInput} n'est pas une commande.\n
                 Veuillez choisir parmi 'chante', 'classement' ou 'quitter'.\n`);
+            break;
     }
 });
